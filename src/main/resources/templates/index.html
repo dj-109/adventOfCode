@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="de">
+<html xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <link href = "css/styles.css" rel = "stylesheet"/>
-    <title>Spring Boot Application</title>
+    <title>Advent of Code Solver</title>
 </head>
 <body>
 <div>
     <nav>
         <ul>
-            <button><a href="/other">other</a></button>
-            <button><a href="/ban">huhu-seite</a></button>
-            <button><a href="#">Seite 3</a></button>
+            <button><a href="/other">Day 1</a></button>
+            <button><a href="/ban">Day 2</a></button>
+            <button><a href="/more">Day 3</a></button>
+            <button><a href="/input">Input</a></button>
         </ul>
     </nav>
 </div>
-<h4>Text - other ist die einzige implementierte Weiterleitung</h4>
-
+<h4>Input:</h4>
+<div>
+    <input type="text" id="id" name="day" th:value="*{inputForSolution}"/>
+</div>
 
 </body>
 </html>
